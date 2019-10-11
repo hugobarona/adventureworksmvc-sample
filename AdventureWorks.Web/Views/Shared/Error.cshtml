@@ -1,0 +1,17 @@
+﻿@using AdventureWorks.Resources
+@using AdventureWorks.Web.Helpers.Settings
+@model HandleErrorInfo
+@{
+    ViewBag.Title = Labels.Error;
+}
+    <div class="login-box">
+        <div class="login-logo">
+            <b>@AppSettings.AppName</b>
+        </div>
+
+        <div class="login-box-body">
+            <hgroup>
+                <h3 class="text-danger">@Messages.Error_Message</h3>
+            </hgroup>
+        </div>
+    </div>
